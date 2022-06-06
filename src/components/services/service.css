@@ -1,0 +1,152 @@
+.servicesContainer {
+  width: 100%;
+  height: 100%;
+  background: #05708d;
+  text-align: center;
+}
+.servicesContainer h1 {
+  color: white;
+  font-size: 3em;
+  padding: 45px 0;
+}
+
+.servicesGriContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.servicesItem {
+  background: white;
+  text-align: start;
+}
+.servicesItem p {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.itemImg {
+  height: 240px;
+  width: 100%;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* ORCAMENTO */
+
+
+.orcamentoForm{
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+
+.orcamentoForm form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+}
+
+.orcamentoForm input{
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.orcamentoForm textarea{
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  font-family: sans-serif;
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  border: 1px solid;
+  outline: 0;
+}
+
+.orcamentoForm label{
+  text-align: start;
+  padding: 10px 0;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+}
+
+.orcamentoForm input[type=submit]{
+  margin: 20px auto 0 auto;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: #05708d;
+  color: white;
+}
+
+
+
+
+
+/* =================== MEDIA QUERIES (medium devices) =================== */
+
+@media screen and (max-width: 1024px) {
+  .orcamentoForm{
+
+    width: 450px;
+
+  }
+}
+
+/* =================== MEDIA QUERIES (small devices) =================== */
+
+@media screen and (max-width: 600px) {
+  .orcamentoForm{
+
+    width: 360px;
+
+  }
+
+  .orcamentoForm input[type=submit]{
+    width: 30%;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* =================== MEDIA QUERIES (medium devices) =================== */
+
+@media screen and (max-width: 1024px) {
+  .servicesContainer h1 {
+    font-size: 2.5em;
+  }
+  .serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* =================== MEDIA QUERIES (small devices) =================== */
+
+@media screen and (max-width: 600px) {
+  .servicesGriContainer {
+    grid-template-columns: 1fr;
+  }
+  .servicesContainer h1 {
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,38 @@
+.localizationContainer{
+  width: 100%;
+  height: 100%;
+  padding: 45px 0;
+  text-align: center;
+}
+
+.localizationContainer h1{
+  font-size: 3em;
+  padding: 45px 0;
+
+}
+
+.localizationContent{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mapContainer{
+  padding: 3% 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* =================== MEDIA QUERIES (medium devices) =================== */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* =================== MEDIA QUERIES (small devices) =================== */
+
+@media screen and (max-width: 600px) {
+
+  
+
+}

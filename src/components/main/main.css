@@ -1,0 +1,45 @@
+.mainContainer{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/bg1.png');
+  background-size: cover;
+  display: flex;
+}
+.mainInfo{
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.mainInfo h1{
+  font-size: 3.5em;
+}
+
+.mainInfo p{
+ font-size: 1.2em;
+}
+
+.mainInfo h1,p{
+  padding-bottom: 10px;
+}
+
+/* =================== MEDIA QUERIES (medium devices) =================== */
+
+@media screen and (max-width: 1024px) {
+  .mainInfo h1 {
+    font-size: 2.5em;
+  }
+}
+
+/* =================== MEDIA QUERIES (small devices) =================== */
+
+@media screen and (max-width: 600px) {
+    .mainInfo h1 {
+    font-size: 2em;
+  }
+  .mainInfo p{
+    font-size: 1em;
+  }
+}
