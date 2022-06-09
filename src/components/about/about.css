@@ -39,6 +39,9 @@
 /* =================== MEDIA QUERIES (medium devices) =================== */
 
 @media screen and (max-width: 1024px) {
+  .aboutContainer h1{
+    font-size: 2.5em;
+  }
   .aboutGridContainer{
     grid-template-columns: 1fr 1fr ;
   }

@@ -5,6 +5,7 @@ import img3 from '../../assets/image2.png';
 import img4 from '../../assets/image1.png';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { WhatsApp } from '@material-ui/icons';
 
 const Services = () => {
   const form = useRef();
@@ -26,7 +27,6 @@ const Services = () => {
           }
         },
         (error) => {
-          console.log(error.text);
           if (error.Text) {
             alert(
               'Mensagem nao enviada, tente novamente mais tarde ou entre em contato atraves do numero de celular',
@@ -50,13 +50,13 @@ const Services = () => {
             <div className="servicesImg">
               <img className="itemImg" src={img2} alt="" />
             </div>
-            <p>Restauracao de Sistema</p>
+            <p>Restauração de Sistema</p>
           </div>
           <div className="servicesItem">
             <div className="servicesImg">
               <img className="itemImg" src={img3} alt="" />
             </div>
-            <p>Desoxidacao</p>
+            <p>Desoxidação</p>
           </div>
           <div className="servicesItem">
             <div className="servicesImg">
@@ -82,6 +82,18 @@ const Services = () => {
               placeholder="Descreva a sua solicitacao"
             />
             <input type="submit" value="Enviar" />
+            <div className="orcamentoContact">
+              <p>Ou envie uma mensagem para nosso Whatsapp:</p>
+
+              <a
+                className="orcamentoContactBtn"
+                href="https://api.whatsapp.com/send?phone=5571981372935"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WhatsApp className="orcamentoContactIcon" />
+              </a>
+            </div>
           </form>
         </div>
       </div>
